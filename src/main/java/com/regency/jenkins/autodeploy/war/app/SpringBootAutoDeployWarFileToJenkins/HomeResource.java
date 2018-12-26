@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeResource {
-	private static final String template = "Spring, %s.";
+	private static final String template = "Spring, %s";
     private final AtomicLong counter = new AtomicLong();
     
     @RequestMapping("/home")
