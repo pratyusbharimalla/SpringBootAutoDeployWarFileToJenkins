@@ -29,7 +29,7 @@ public class HomeResource {
     private final AtomicLong counter = new AtomicLong();
     
     @RequestMapping("/home")
-    public Message greeting(@RequestParam(value="message", defaultValue="Web Application") String message) {
+    public Message greeting(@RequestParam(value="message", defaultValue="Auto deploy web Application") String message) {
         return new Message(counter.incrementAndGet(),
                             String.format(template, message));
     }
